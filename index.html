@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Lessons</title>
+</head>
+
+<body>
+    
+<div class="container">
+    
+    <div class="main">
+        <h2>Виберіть Вашу стать:</h2>
+        <select name="sex" id="sex">
+            <option class="option" value="value0 " selected> - </option>
+            <option class="option" value="man">Чоловік</option>
+            <option class="option" value="woman">Жінка</option>
+        </select>
+    
+        <div class="woman">
+            <h2>Дівчат рік не питають</h2>
+        </div>
+
+        <div class="nothing">
+            <h2>Обери значення, не задовбуй!</h2>
+        </div>
+
+        <div class="man">
+            <h2 class="title-price">Введіть Ваш рік народження:</h2>
+            <input class="input" placeholder="1970" maxlength="4" type="text" oninput="changeHandler(this)">
+            <button class="btn">Підтвердити</button>
+        </div>
+
+        <div class="warning">
+            <h2>Введіть 4 цифри</h2>
+        </div>
+
+        <div class="warningAge">
+            <h2>Введіть реальний рік</h2>
+        </div>
+
+
+        <div class="noteighteen">
+            <h2>Вам ще немає 18! Киш звідси!</h2>
+        </div>
+
+        <div class="eighteen">
+            <h2>Вітаємо! Ви вже дорослий!</h2>
+        </div>
+
+        
+    
+    
+    </div>
+    
+
+
+
+</div>
+
+    
+    
+    
+</body>
+
+<script src="./main.js"></script>
+</html>
