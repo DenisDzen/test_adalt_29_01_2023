@@ -27,7 +27,7 @@ btn.addEventListener('click', (e) => {
      fooAdalt();
 });
 
-// FUNCTION
+// ALL FUNCTION
 
 function changeHandler(e) {
     value = e.value;
