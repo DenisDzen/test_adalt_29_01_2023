@@ -43,14 +43,26 @@ function changeHandler(e) {
 
 function fooMan() {
     man.classList.add('seeman');
+    nothing.classList.remove('seenothing');
+    woman.classList.remove('seewoman');
 }
 
 function fooWoman() {
     woman.classList.add('seewoman');
+    eighteen.classList.remove('seeeighteen');
+    noteighteen.classList.remove('seenoteighteen');
+    warningAge.classList.remove('seewarningAge');
+    man.classList.remove('seeman');
+    nothing.classList.remove('seenothing');
 }
 
 function fooNothing() {
     nothing.classList.add('seenothing');
+    eighteen.classList.remove('seeeighteen');
+    noteighteen.classList.remove('seenoteighteen');
+    warningAge.classList.remove('seewarningAge');
+    man.classList.remove('seeman');
+    woman.classList.remove('seewoman');
 }
 
 
@@ -65,7 +77,7 @@ function fooAdalt() {
         eighteen.classList.remove('seeeighteen');
     };
 
-    if (adalt > 18 && adalt < 150) { 
+    if (adalt >= 18 && adalt < 150) { 
         warningAge.classList.remove('seewarningAge');
         eighteen.classList.add('seeeighteen');
         noteighteen.classList.remove('seenoteighteen');
